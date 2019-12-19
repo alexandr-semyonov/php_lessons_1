@@ -1,0 +1,39 @@
+.table {
+  border-spacing: 0;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.table th,
+.table td {  
+  border: 1px solid black;
+}
+
+.table td{
+  width: 30%;
+}
+
+.table td:last-child{
+  width: 40%;
+}
+
+.list-of-anchors{
+  margin-bottom: 30px;
+}
+
+.solutions{
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.solutions li{    
+  display: inline;
+  margin: 10px;
+}
+
+.solutions li a{
+  margin: 10px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
