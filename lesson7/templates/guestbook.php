@@ -10,7 +10,7 @@
 
 <ul>
   <?php foreach ( $data as $record ): ?>
-    <li><?php echo $record ?></li>
+    <li><?php echo $record->getMessage() ?></li>
   <?php endforeach; ?>
 </ul>
 <form action="send.php" method="post">

@@ -1,5 +1,6 @@
 <?php
 
+require_once __DIR__ . '/GuestBookRecord.php';
 
 class TextFile
 {
@@ -9,16 +10,21 @@ class TextFile
     $fh = fopen(__DIR__ . '/../data.txt', 'r');
     $i = 0;
     while( !feof($fh) ){
-      $lines[$i] = fgets($fh);
-      $lines[$i] = str_replace (["\r\n", "\n", "\r"], '', $lines[$i]);
+      $line[$i] = fgets($fh);
+      $line[$i] = str_replace (["\r\n", "\n", "\r"], '', $line[$i]);
+      $data[] = new GuestBookRecord($line[$i]);
       $i++;
     }
-    $this->data = $lines;
+    $this->data = $data;
     return $this;
   }
 
   public function save()
   {
-    return file_put_contents( __DIR__ . '/../data.txt', implode("\n", $this->data));
+    $lines = [];
+    foreach ($this->data as $record){
+      $lines[] = $record->getMessage();
+    }
+    return file_put_contents( __DIR__ . '/../data.txt', implode("\n", $lines));
   }
 }

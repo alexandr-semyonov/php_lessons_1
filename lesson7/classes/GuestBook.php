@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . '/TextFile.php';
+require_once __DIR__ . '/GuestBookRecord.php';
 
 class GuestBook extends TextFile
 {
@@ -12,7 +13,7 @@ class GuestBook extends TextFile
   }
   public function append($text)
   {
-    $this->data[] = $text;
+    $this->data[] = new GuestBookRecord($text);
     return $this;
   }
 }
