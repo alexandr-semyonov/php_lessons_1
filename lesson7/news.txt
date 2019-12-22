@@ -1,0 +1,3 @@
+Name of news|Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eligendi aliquid sapiente exercitationem corporis ex, culpa voluptatibus at voluptatem. Tempore qui sit velit laborum veritatis, illum repellat est culpa odit
+Name of news 2|2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eligendi aliquid sapiente exercitationem corporis ex, culpa voluptatibus at voluptatem. Tempore qui sit velit laborum veritatis, illum repellat est culpa odit
+Name of news 3|3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eligendi aliquid sapiente exercitationem corporis ex, culpa voluptatibus at voluptatem. Tempore qui sit velit laborum veritatis, illum repellat est culpa odit
