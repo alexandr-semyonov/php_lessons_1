@@ -11,7 +11,8 @@
   $sql = 'SELECT * FROM news WHERE id=:id';
   $data = [
     ':id' => (int)$_GET['id'],
-  ];
+
+    ];
 
   $records = $db->query($sql, $data);
   if (empty($records)){

@@ -1,0 +1,10 @@
+
+.main-page__header,
+.main-page__article,
+.main-page__author{
+    margin-top: 20px;
+}
+
+.main-page__article{
+    margin-bottom: 20px;
+}
