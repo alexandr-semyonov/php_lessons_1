@@ -3,9 +3,8 @@
 require __DIR__ . '/autoload.php';
 
 $view = new \View\App\View();
-$mainPage = new \Model\Main\MainPage();
+$mainPage = new \Model\mainPage\MainPage();
 
 
-//var_dump($mainPage->dataMain);
 
-$view->assign('main', $mainPage)->display(__DIR__ . '/view/templates/index.php');
+$view->assign('mainPage', $mainPage)->display(__DIR__ . '/view/templates/index.php');
