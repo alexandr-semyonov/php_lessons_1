@@ -13,7 +13,7 @@ class Db
   {
     $config = require __DIR__ . '/../config.php';
     $dsn = 'mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'];
-    $this->dbh = new PDO($dsn, $config['user'], $config['password']);
+    $this->dbh = new PDO($dsn, $config['user'], $config['password'], array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
   }
 
   /*Метод execute(string $sql) выполняет запрос и возвращает true либо false в зависимости от того, удалось ли выполнение*/
