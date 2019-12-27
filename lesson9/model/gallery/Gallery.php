@@ -15,7 +15,7 @@ class Gallery
     $sql = 'SELECT * FROM gallery';
     $data = $db->query($sql);
     foreach ($data as $picture) {
-      $this->data[] = new
+      $this->data[] = new GalleryImage($picture);
     }
     
     //$this->imageLinks = scandir( __DIR__ . '/../../img', SCANDIR_SORT_NONE );
