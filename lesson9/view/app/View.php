@@ -26,7 +26,9 @@ class View
   public function render(string $template){
     ob_start();
     $data = $this->data;
+    include __DIR__ . '/../templates/common/header.php';
     include $template;
+    include __DIR__ . '/../templates/common/footer.php';
     $res = ob_get_clean();
     return $res;
   }
