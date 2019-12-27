@@ -21,8 +21,8 @@ class Gallery
     //$this->imageLinks = scandir( __DIR__ . '/../../img', SCANDIR_SORT_NONE );
   }
 
-  public function getImageLinks()
+  public function getData()
   {
-    return $this->imageLinks;
+    return $this->data;
   }
 }

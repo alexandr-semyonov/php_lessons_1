@@ -1,3 +1,5 @@
+<?php var_dump($this->data['gallery']->getData); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,10 +32,10 @@
     <ul>
       <?php
 
-      foreach ($data as $link) {
-        if ($link !== '.' && $link !== '..'){
-          echo '<li><img src="img/' .  $link . '" alt="gallery image"></li>' . PHP_EOL;
-        }
+      foreach ($this->data['gallery'] as $picture) {
+       
+          echo '<li><img src="img/' .  $picture->getImageName() . '" alt="gallery image"></li>' . PHP_EOL;
+        
       }
       ?>
     </ul>
