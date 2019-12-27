@@ -1,5 +1,3 @@
-<?php var_dump($this->data['gallery']->getData); ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,23 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Gallery</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <style>
-    ul {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: left;
-      list-style: none;
-    }
-    li {
-      margin: 10px ;
-    }
-
-    img{
-      width: 300px;
-    }
-  </style>
+  <link rel="stylesheet" href="/lesson9/view/css/style.css">
 </head>
 <body class="container">
 <div class="row">
@@ -32,9 +14,9 @@
     <ul>
       <?php
 
-      foreach ($this->data['gallery'] as $picture) {
+      foreach ($this->data['gallery']->getData() as $picture) {
        
-          echo '<li><img src="img/' .  $picture->getImageName() . '" alt="gallery image"></li>' . PHP_EOL;
+          echo '<li><img src="img/' .  $picture->getImageName() . '" alt="' . $picture->getImageAlt() . '"></li>' . PHP_EOL;
         
       }
       ?>
