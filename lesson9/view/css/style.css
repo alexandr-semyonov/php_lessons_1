@@ -5,11 +5,12 @@
     margin-top: 20px;
 }
 
-.main-page__article{
+.main-page__article,
+.navbar{
     margin-bottom: 20px;
 }
 
-ul {
+.image-gallery {
     margin: 0;
     padding: 0;
     display: flex;

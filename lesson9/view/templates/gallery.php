@@ -1,7 +1,7 @@
 
 <div class="row">
   <div class="col">
-    <ul>
+    <ul class="image-gallery">
       <?php
 
       foreach ($this->data['gallery']->getData() as $picture) {

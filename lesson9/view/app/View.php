@@ -8,12 +8,14 @@ class View
 
 {
   protected $data = [];
+  public $title = '';
 
   /*задача - сохранить данные, передаваемые в шаблон
   по заданному имени (используйте защищенное свойство
   - массив для хранения этих данных)*/
-  public function assign($name, $value){
+  public function assign(string $name, object $value, string $title){
     $this->data[$name] = $value;
+    $this->title = $title;
     return $this;
   }
 
@@ -25,7 +27,6 @@ class View
 
   public function render(string $template){
     ob_start();
-    $data = $this->data;
     include __DIR__ . '/../templates/common/header.php';
     include $template;
     include __DIR__ . '/../templates/common/footer.php';

@@ -8,7 +8,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="/view/css/style.css">
-  <title>About myself</title>
+  <title><?php echo $this->title ?></title>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
               <a class="nav-link" href="/gallery.php">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><!--disabled" href="#" tabindex="-1" aria-disabled="true"-->Guestbook</a>
+              <a class="nav-link" href="/guestbook.php"><!--disabled" href="#" tabindex="-1" aria-disabled="true"-->Guestbook</a>
             </li>
           </ul>
         </div>
