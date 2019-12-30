@@ -24,4 +24,12 @@ class Book
   {
     return $this->data;
   }
+
+  public function append($record){
+    $record = strip_tags($record);
+    $db = new Db();
+    $sql = "INSERT INTO guestbook (records) VALUES ( '$record' )";
+    $db->execute($sql);
+  }
+
 }
